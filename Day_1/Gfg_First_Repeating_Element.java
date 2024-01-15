@@ -40,6 +40,32 @@ class Solution {
             return preIndex+1;
         }
     }
+
+     /*
+      //WAY 2
+        ArrayList al = new ArrayList();
+        int index = -1;
+        int flg = 0;
+        int preIndex = Integer.MAX_VALUE;
+
+        for(int num:arr){
+                if(al.contains(num)){
+                        flg =1;
+                        index= al.indexOf(num);
+
+                        if(preIndex > index)
+                                preIndex = index;
+
+                }
+                al.add(num);
+
+        }
+
+        if(flg == 1){
+                return preIndex+1;
+        }else{
+        return -1;
+        }*/
 }
 class Demo{
 	public static void main(String [] pdp) throws IOException{
