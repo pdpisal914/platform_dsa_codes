@@ -52,6 +52,25 @@ class Solution {
                 }
                 return false;
                 */
+    /*
+     //OPTIMIZED Accepted
+     //WAY 3
+      boolean hasArrayTwoCandidates(int arr[], int n, int target) {
+                HashSet al = new HashSet();
+                for (int i=0;i<arr.length;i++){
+
+                    int rem =  target - arr[i];
+                        if(al.contains(rem)){
+                                return true;
+                        }
+                        else{
+                                al.add(arr[i]);
+                        }
+                }
+                return false; 
+    }
+
+     */
 }
 class Demo{
 	public static void main(String [] pdp) throws IOException{
